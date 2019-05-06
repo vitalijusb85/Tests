@@ -3,10 +3,10 @@ node {
 		checkout scm
 
 	stage 'Build'
-		bat 'dotnet build Test.sln'
+		bat' cd Test'
+		bat 'dotnet build '
 
 	stage 'Publish'
-		bat 'rmdir D:/Jenkins/workspace/Test/Test/app /s /q'
-		bat 'dotnet publish Test.sln -c release -o app/'
+		bat 'dotnet publish -c release -o app/'
 
 }
