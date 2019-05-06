@@ -7,6 +7,6 @@ node {
 		bat 'dotnet build '
 
 	stage 'Publish'
-		bat 'dotnet publish -c release -o app/'
+		bat 'dotnet publish -c release -o app'
 
 }
