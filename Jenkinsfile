@@ -6,6 +6,6 @@ node {
 		bat 'dotnet build Test.sln'
 
 	stage 'Publish'
-		bat 'dotnet publish Test.sln -c releae - app/'
+		bat 'dotnet publish Test.sln -c releae -o app/'
 
 }
