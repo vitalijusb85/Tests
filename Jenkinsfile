@@ -7,7 +7,7 @@ node {
 		bat 'dotnet build '
 
 	stage 'Publish'
-		bat ' if exist app\ rd -r app'
+		bat ' if exist app/ rd -r app'
 		bat 'dotnet publish -c release -o app'
 
 }
