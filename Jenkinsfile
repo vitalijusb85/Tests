@@ -1,6 +1,6 @@
 node {
 	stage ('Clean'){
-		bat'rd -f Test' 
+		deleteDir()
 	}
 	stage ('Checkout'){
 		checkout scm
