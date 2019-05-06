@@ -1,15 +1,15 @@
 node {
-	stage 'Clean'
-		git clean -fdx
-	
-	stage 'Checkout'
+	stage ('Clean'){
+		bat'rd -f Test' 
+	}
+	stage ('Checkout'){
 		checkout scm
-
-	stage 'Build'
+	}
+	stage ('Build'){
 		bat' cd Test'
 		bat 'dotnet build '
-
-	stage 'Publish'
+	}
+	stage ('Publish'){
 		bat 'dotnet publish -c release -o app/'
-
+	}
 }
