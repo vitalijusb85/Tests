@@ -6,7 +6,7 @@ node {
 		bat 'dotnet build Test.sln'
 
 	stage 'Publish'
-		bat 'rm -rf app'
+		bat 'RMDIR  app'
 		bat 'dotnet publish Test.sln -c release -o app/'
 
 }
