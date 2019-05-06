@@ -1,4 +1,7 @@
 node {
+	stage 'Clean'
+		git clean -fdx
+	
 	stage 'Checkout'
 		checkout scm
 
@@ -7,7 +10,6 @@ node {
 		bat 'dotnet build '
 
 	stage 'Publish'
-		bat ' if exist app/ rd -r app'
 		bat 'dotnet publish -c release -o app/'
 
 }
