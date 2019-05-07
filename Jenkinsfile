@@ -16,6 +16,7 @@ node {
 		
 		bat 'dir'
 		bat 'cd Test'
+		bat 'dir'
 		bat 'docker build -t test .'
 	}
 }
