@@ -12,4 +12,7 @@ node {
 	stage ('Publish'){
 		bat 'dotnet publish -c release -o app/'
 	}
+	stage ('Docker Build'){
+		bat 'docker build -t test .'
+	}
 }
