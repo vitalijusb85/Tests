@@ -19,7 +19,7 @@ node {
 
 	stage ('Docker Run'){
 			
-		bat 'docker run -it -p 5002:80 test'
+		bat 'winpty docker run -it -p 5002:80 test'
 	}
 	
 }
