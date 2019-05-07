@@ -14,7 +14,7 @@ node {
 	}
 	stage ('Docker Build'){
 		
-		bat 'ls'
+		bat 'dir'
 		bat 'docker build -t test .'
 	}
 }
