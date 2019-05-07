@@ -13,6 +13,8 @@ node {
 		bat 'dotnet publish -c release -o app/'
 	}
 	stage ('Docker Build'){
+		
+		bat 'ls'
 		bat 'docker build -t test .'
 	}
 }
