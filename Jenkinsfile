@@ -19,7 +19,7 @@ node {
 
 	stage ('Docker Run'){
 			
-		bat 'cd Test && docker run -it -p 5000:80 test'
+		bat 'docker run -it -p 5002:80 test'
 	}
 	
 }
