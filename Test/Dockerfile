@@ -18,10 +18,7 @@ RUN dotnet restore "Test.csproj"
 
 FROM microsoft/dotnet:aspnetcore-runtime
 WORKDIR /app
-<<<<<<< HEAD
+
 COPY --from=build-env /app .
 ENTRYPOINT ["dotnet", "Test.dll"]
-=======
-COPY --from=publish /app .
-ENTRYPOINT ["dotnet", "Test.dll"]
->>>>>>> 1928d0da84a9de1664f472d5847d0db9703b1ed0
+
